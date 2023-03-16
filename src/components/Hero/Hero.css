@@ -1,0 +1,85 @@
+:root{
+    --colro-dark:#27292a;
+    --color-darkest:#1f2122;
+    --primary-color: #ec6090;
+    --padding-primary:50px;
+    --margin-primary:50px;
+    --borderreduis-primary:25px;
+}
+.HeroMain{
+    background-image: url(../../image/R.jfif);
+    background-position: center;
+    background-size: cover;
+    background-color: var(--colro-dark);
+    padding: var(--padding-primary);
+    border-radius: var(--borderreduis-primary);
+    color: white;
+    position: relative;
+}
+@media screen and (max-width: 768px) {
+    .HeroMain{
+        text-align: center;
+    }
+}
+.HeroMain::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: var(--borderreduis-primary);
+  background-color: #21252982;
+  z-index: 100;
+}
+.Hero-Text{
+    max-width: 700px;
+    position:relative;
+    z-index: 200;
+}
+.Hero-Title{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px){
+    .Hero-Title{
+        font-size: 1rem;
+    }
+}
+.Hero-Title em{
+    font-style: normal;
+    color: var(--primary-color);
+}
+.Hero-Subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.Main-Bottom{
+    width: fit-content;
+    background-color: var(--primary-color);
+    padding: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 200;
+    transition: .3s linear;
+}
+@media screen and (max-width: 768px){
+    .Main-Bottom{
+        margin: auto;
+    }
+}
+.Main-Bottom:hover{
+  background-color: white;
+}
+.Main-Bottom a{
+    color: white;
+    font-weight: bold;
+    transition: .3s linear;
+}
+.Main-Bottom a:hover{
+    color: var(--primary-color);
+}

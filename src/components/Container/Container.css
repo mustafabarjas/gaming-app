@@ -1,0 +1,14 @@
+:root{
+    --colro-dark:#27292a;
+    --color-darkest:#1f2122;
+    --primary-color: #ec6090;
+    --padding-primary:50px;
+    --margin-primary:50px;
+    --borderreduis-primary:25px;
+}
+.main-container{
+    background-color: var(--colro-dark);
+    padding: var(--padding-primary);
+    border-radius: var(--borderreduis-primary);
+    margin-top: 25px;
+}

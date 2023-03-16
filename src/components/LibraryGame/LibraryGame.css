@@ -1,0 +1,88 @@
+:root{
+    --colro-dark:#27292a;
+    --color-darkest:#1f2122;
+    --primary-color: #ec6090;
+    --padding-primary:50px;
+    --margin-primary:50px;
+    --borderreduis-primary:25px;
+}
+.library-game-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.library-game-card{
+    flex: 1 1 100%;
+}
+.library-game-card .image-card{
+    width: 120px;
+}
+.library-game-card ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.library-game-card ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.library-game-card ul li h4{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.library-game-card ul li span{
+    color: #ffffff61;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .library-game-cards{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    } 
+    .library-game-card{
+        width: 130%;
+    }
+    .library-game-card ul{
+        justify-content: center;
+        flex-direction: column;
+        border-top: 1px solid var(--primary-color);
+        border-left: 1px solid var(--primary-color);
+        border-right: 1px solid var(--primary-color);
+        margin: 10px auto;
+        width: 70%;
+        border-radius: 7px;
+        background: linear-gradient(195deg, var(--primary-color), black);
+    }
+    .library-game-card .image-card{
+        margin-bottom: 10px;
+        width: 100px;
+        border: 1px solid;
+        border-radius: 6px;
+        margin: 10px auto;
+        height: 140px;
+        flex: .9;
+    }
+    .library-game-card ul li{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .library-game-card ul li span{
+        margin-top: -10px;
+    }
+}

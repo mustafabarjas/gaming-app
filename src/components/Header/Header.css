@@ -1,0 +1,7 @@
+.icon{
+ color: #ec6090;
+ font-size: .5rem;
+}
+.navbar .container .nav-link:hover{
+   color: #ec6090; 
+}

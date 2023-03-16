@@ -1,0 +1,28 @@
+:root{
+    --colro-dark:#27292a;
+    --color-darkest:#1f2122;
+    --primary-color: #ec6090;
+    --padding-primary:50px;
+    --margin-primary:50px;
+    --borderreduis-primary:25px;
+}
+
+.footer-text{
+    background-color: var(--color-darkest);
+    color:white;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.footer-text h4{
+    text-transform: uppercase;
+}
+.footer-text h4 span{
+    color: var(--primary-color);
+}
+
+.footer-text span{
+    font-weight: bold;
+}
